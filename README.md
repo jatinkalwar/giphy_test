@@ -22,6 +22,14 @@ A Flutter-based application that displays trending projects and allows users to 
 ---
 
 
+## 🛠 App Links
+
+- **Live Url** - https://peaceful-daffodil-f2f730.netlify.app/
+- **Video Url** – https://drive.google.com/file/d/1T2BNEIYZVGlV0u7Co5EGl_jGZWyPHEoB/view?usp=sharing
+
+
+---
+
 ## ▶️ How to Run the Project
 
 Ensure Flutter is installed and properly configured.
@@ -35,4 +43,3 @@ flutter run
 ```bash
 flutter run -d chrome
 ```
-#
