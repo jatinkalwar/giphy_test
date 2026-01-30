@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:giphy_project/core/widgets/custom_search_bar.dart';
-import 'package:giphy_project/core/widgets/custom_shimmer.dart';
+
 import 'package:giphy_project/module/home/provider/home_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
             controller: _trendingScrollController,
             padding: const EdgeInsets.all(8.0),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 8,
+              crossAxisCount: 3,
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
             ),
@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
             controller: _searchScrollController,
             padding: const EdgeInsets.all(8.0),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 8,
+              crossAxisCount: 3,
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
             ),

@@ -44,7 +44,7 @@ class HomeProvider extends ChangeNotifier {
     try {
       isLoading = true;
       _trendingOffset = 0;
-      final endpoint = '$baseUrl/trending?api_key=$api&limit=100&offset=$_trendingOffset&rating=g&bundle=messaging_non_clips';
+      final endpoint = '$baseUrl/trending?api_key=$api&limit=20&offset=$_trendingOffset&rating=g&bundle=messaging_non_clips';
       final res = await callGetApi(endpoint, context);
       
       if (res != null) {
@@ -64,7 +64,7 @@ class HomeProvider extends ChangeNotifier {
       _isLoadingMore = true;
       notifyListeners();
       
-      final endpoint = '$baseUrl/trending?api_key=$api&limit=100&offset=$_trendingOffset&rating=g&bundle=messaging_non_clips';
+      final endpoint = '$baseUrl/trending?api_key=$api&limit=20&offset=$_trendingOffset&rating=g&bundle=messaging_non_clips';
       final res = await callGetApi(endpoint, context);
       
       if (res != null) {
@@ -89,7 +89,7 @@ class HomeProvider extends ChangeNotifier {
     try {
       isLoading = true;
       _searchOffset = 0;
-      final searchEndpoint = '$baseUrl/search?api_key=$api&q=$_searchQuery&limit=100&offset=$_searchOffset&rating=g&lang=en';
+      final searchEndpoint = '$baseUrl/search?api_key=$api&q=$_searchQuery&limit=20&offset=$_searchOffset&rating=g&lang=en';
       final res = await callGetApi(searchEndpoint, context);
       if (res != null) {
         _searchGifsModel = SearchGifsModel.fromJson(res);
@@ -109,7 +109,7 @@ class HomeProvider extends ChangeNotifier {
       notifyListeners();
 
       
-      final searchEndpoint = '$baseUrl/search?api_key=$api&q=$_searchQuery&limit=100&offset=$_searchOffset&rating=g&lang=en';
+      final searchEndpoint = '$baseUrl/search?api_key=$api&q=$_searchQuery&limit=20&offset=$_searchOffset&rating=g&lang=en';
       final res = await callGetApi(searchEndpoint, context);
       
       if (res != null) {
